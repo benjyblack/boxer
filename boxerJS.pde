@@ -98,8 +98,8 @@ int KEY_SPECIAL = 67; //C
 int KEY_SPECIAL2 = 86; //V
 int KEY_SPECIAL3 = 66; //B
 int KEY_SPECIAL4 = 68; //D
-int KEY_KILLALL = 8; //backspace
-int KEY_PHATLOOT = 80; 
+int KEY_KILLALL = 57; //9
+int KEY_PHATLOOT = 48; // 0
 int KEY_POWER1 = 89; //Y
 int KEY_POWER2 = 85; //U
 int KEY_POWER3 = 73; //I
@@ -441,7 +441,6 @@ class Screen
             decoyPresent = false;
           if(!(c instanceof Loot))
             deathSound.play();
-          console.log("Removing!");
           sprites.remove(i);  
           if(!c.hostile && !c.inanimate) 
           {
@@ -2565,8 +2564,6 @@ void down(int theKey)
     initializeWorld(); // temporary game over
 
   }
-  else if(theKey == 32) togglePause();
-
   
   if(!paused)
   {
@@ -2642,7 +2639,6 @@ void down(int theKey)
  }
   if(theKey == KEY_ATTACK) player.attack_cue = true;
   if(theKey == KEY_PHATLOOT) {
-    console.log("CHEATER!");
     cheated = true; 
     hasDecoy = hasSludge = hasOil = hasBite = true;
     bite = new Bite();

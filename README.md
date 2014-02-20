@@ -28,7 +28,8 @@ The objective of the game is to exact your revenge by eliminating the entire Nat
 		M - Mute
 		Spacebar - Pause
 	Testing Controls
-	    P - Obtain all power-ups
+	    0 - Obtain all power-ups
+	    9 - Kill all enemies
 
 ###Credits
 
